@@ -18,3 +18,20 @@ def load_riddles(file) :
 def pere_fouras_riddle() :
     riddles = load_riddles('PFRiddles.json')
     riddle = random.choice(riddles)
+    attempts = 3 
+
+    print(f"Riddle: {riddle['question']}")
+
+    while attempts > 0 :
+        answer = input("Answer: ").strip().lower()
+
+        if answer == riddle["answer"].lower() :
+            print("Correct!")
+            return True
+        else :
+            attempts -= 1
+            if attempts > 0 :
+                print(f"Incorrect. You have {attempts} attempts left.")
+            else :
+                print("You have no more attempts. Game over. The correct answer is: " , riddle["answer"])
+                return False
