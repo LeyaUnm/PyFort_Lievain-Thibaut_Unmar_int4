@@ -1,6 +1,6 @@
 from math_challenges import *
 from pere_fouras_challenge import *
-from logic_challenge import *
+from logic_battleship import *
 
 
 # main programme pour les challenges de math
