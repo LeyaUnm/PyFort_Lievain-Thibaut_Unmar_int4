@@ -57,22 +57,6 @@ def math_challenge_prime():
         return False
 
 
-def solve_linear_equation():
-    a, b = random.randint(1, 11), random.randint(1, 11)
-    x = -b / a
-    return a, b, x
-
-
-def math_challenge_equation():
-    a , b, x = solve_linear_equation()
-    guess = float(input("Solve this equation : {}x + {} : ".format(a, b)))
-    if guess == x:
-        return True
-    else:
-        return False
-
-
-
 def math_roulette_challenge():
     m = []
     for i in range(5):
@@ -117,7 +101,7 @@ def math_roulette_challenge():
 
 
 def math_challenge():
-    result = random.randint(1, 4)
+    result = random.randint(1, 3)
     sucess = False
     if result == 1:
         print("The master has chosen the factorial challenge")
@@ -126,9 +110,6 @@ def math_challenge():
         print("The master has chosen the prime challenge")
         sucess = math_challenge_prime()
     if result == 3:
-        print("The master has chosen the equation challenge")
-        sucess = math_challenge_equation()
-    if result == 4:
         print("The master has chosen the roulette challenge")
         sucess = math_roulette_challenge()
     return sucess
