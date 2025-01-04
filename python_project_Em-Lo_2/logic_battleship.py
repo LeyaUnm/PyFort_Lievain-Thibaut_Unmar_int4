@@ -63,7 +63,7 @@ def turn(player, player_grid, player_shots_grid, opponent_grid): # Added player_
 
         places = [(i,j) for i in range(3) for j in range(3) if player_grid[i][j] in [" ", "B"]] # Moves the master didnt already picked
         pick = places[randint(0, len(places)-1)] # Pick random place to shot
-        print(f"Le maître tire en {pick[0]+1},{pick[1]+1}")
+        print(f"The master shoots in {pick[0]+1},{pick[1]+1}")
 
         if player_grid[pick[0]][pick[1]] == "B": # If the master shot a boat, place an X on the player grid
             player_grid[pick[0]][pick[1]] = "X"
