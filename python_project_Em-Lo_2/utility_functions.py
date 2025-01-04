@@ -1,4 +1,5 @@
-
+# Fort Boyard Simulation : Lola Lievain-Thibaut ; Emeline Unmar
+# Implementation of the utility functions
 
 # Function to display the introduction message at the start of the game
 def introduction():
