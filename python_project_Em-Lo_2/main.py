@@ -3,12 +3,8 @@ from pere_fouras_challenge import *
 from logic_battleship import *
 from chance8challenge import *
 
-# main programme pour les challenges de math
-if __name__ == '__main__' :
-    riddles = load_riddles('PFRiddles.json')
-    print(riddles)
     
-def game():
+def game(): #Main program
     introduction()
     compose_equipe()
     key = 0
