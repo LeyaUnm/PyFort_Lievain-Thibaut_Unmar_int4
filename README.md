@@ -52,10 +52,10 @@ o Functions:
 ## Chance challenges : 
 
 ### shell_game() :
-*This function is the entire chance shell game. When you call this function, you are able to play the game. 
- *The game consists in choosing one of three shells, and one has a key under it. If the chosen shell doesn't have a key, we start again. 
- *If after two attempts the player does not find the key, they lose. Otherwise, they win the key.
- *It returns a boolean, True if the player succeeds, and False if he failed
+* This function is the entire chance shell game. When you call this function, you are able to play the game. 
+ * The game consists in choosing one of three shells, and one has a key under it. If the chosen shell doesn't have a key, we start again. 
+ * If after two attempts the player does not find the key, they lose. Otherwise, they win the key.
+ * It returns a boolean, True if the player succeeds, and False if he failed
 
 ### dice_game() :
 *This function is the entire dice shell game. When you call this function, you are able to play the game. 
