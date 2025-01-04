@@ -72,7 +72,35 @@ among team members.
 
 o Test strategies : 
 
-§ Specific test cases and results. 
-§ Screenshots showing the tests in action. 
+Specific Test Cases and Results:
+
+Mathematical Challenges:
+
+Test Case: Verifying that the factorial function returns correct results for inputs ranging from 0 to 11.
+![image](https://github.com/user-attachments/assets/8a27481b-c8a5-4f62-aea6-fd363acdabfc)
+Result: The function passed all cases.
+
+Test Case: Checking the identification of the nearest prime number when multiple prime numbers are equidistant.
+![Screenshot 2025-01-04 230921](https://github.com/user-attachments/assets/3e02ee22-a417-46ef-87fe-4915c05b1377)
+
+Issue Found: The initial algorithm did not handle cases with two equidistant prime numbers (e.g., 22, where both 11 and 13 are valid).
+
+Resolution: The code was updated to return both primes, and the test confirmed the fix.
+Game Start:
+
+Test Case: Testing team composition with valid and invalid player inputs.
+
+![Screenshot 2025-01-04 231200](https://github.com/user-attachments/assets/a5174645-2370-4253-a1ce-97a4a792b075)
+
+Result: The application correctly handled errors, such as invalid player counts or missing leader assignments.
+
+Test Case: Simulating a "battleship" challenge.
+
+![Screenshot 2025-01-04 231634](https://github.com/user-attachments/assets/3204e235-7b47-42ff-9665-3dd856b90aee)
+
+Result: The challenge ran as expected, with correct handling of player inputs and outputs.
+
+
+
   
 
