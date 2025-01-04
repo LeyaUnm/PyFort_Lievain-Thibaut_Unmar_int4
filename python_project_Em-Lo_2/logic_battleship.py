@@ -1,4 +1,8 @@
+# Fort Boyard Simulation : Lola Lievain-Thibaut ; Emeline Unmar
+# Implementation of the battleship challenge's function
+
 from random import randint
+
 def next_player(player):
     return [1,0][player] # Changes the player
 
