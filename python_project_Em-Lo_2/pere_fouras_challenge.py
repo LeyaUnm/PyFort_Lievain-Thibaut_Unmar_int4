@@ -3,7 +3,7 @@ import random
 
 
 def load_riddles(file) :
-    with open('PFRiddles.json' , 'r' ) as f :
+    with open('python_project_Em-Lo_2/PFRiddles.json' , 'r' ) as f :
         data = json.load(f)
 
     riddles = []
@@ -16,7 +16,7 @@ def load_riddles(file) :
         return riddles
     
 def pere_fouras_riddle() :
-    riddles = load_riddles('PFRiddles.json')
+    riddles = load_riddles('python_project_Em-Lo_2/PFRiddles.json')
     riddle = random.choice(riddles)
     attempts = 3 
 
