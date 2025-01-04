@@ -1,4 +1,8 @@
+# Fort Boyard Simulation : Lola Lievain-Thibaut ; Emeline Unmar
+# Implementation of chance challenge's functions
+
 from random import randint
+
 def shell_game(): #Easy
     print("You will play the shell game. Under one of three shells will be hidden the key you are looking for. CHose wisely. You have two attempts, and the key will change shells each time, or not... good luck!")
     shells = ['A', 'B', 'C']
