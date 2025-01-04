@@ -1,3 +1,6 @@
+# Fort Boyard Simulation : Lola Lievain-Thibaut ; Emeline Unmar
+# Implemention of the final challenge's function
+
 import json
 import random
 
