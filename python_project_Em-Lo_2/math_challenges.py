@@ -1,6 +1,11 @@
-import random
-from random import randint
+# Fort Boyard Simulation : Lola Lievain-Thibaut ; Emeline Unmar
+# implementation of math functions
 
+import random
+
+# Function to calculate the factorial of a number
+# Parameter: n (int) - the number to calculate the factorial for
+# Returns: f (int) - the factorial of n
 def factorial(n):
     f = 1
     if n == 0:
@@ -10,18 +15,25 @@ def factorial(n):
             f *= i
     return f
 
-
+# Math challenge to find the factorial of a random number between 0 and 10
+# Prompts the user for input and compares it to the correct factorial
+# Returns: True if the user provides the correct answer, False otherwise
 def math_challenge_factorial():
-    print("yes")
-    n = random.randint(0, 11)
-    a = int(input(f"Math Challenge: Find the factorial of {n} : "))
+    n = random.randint(0, 11)  # Generate a random number
+    try:
+        a = int(input(f"Math Challenge: Find the factorial of {n} : "))
+    except ValueError:
+        print("Error: Please enter a valid integer")  # Error handling for invalid input
+        return False
     m = factorial(n)
     if a == m:
         return True
     else:
         return False
 
-
+# Function to check if a number is prime
+# Parameter: n (int) - the number to check
+# Returns: True if n is prime, False otherwise
 def is_prime(n):
     if n <= 1:
         return False
@@ -30,13 +42,16 @@ def is_prime(n):
             return False
     return True
 
+# Function to find the nearest prime numbers to n (both lower and upper)
+# Parameter: n (int) - the number to find the nearest primes to
+# Returns: primes (list) - a list of the closest prime numbers to n
 def nearest_prime(n):
     if is_prime(n):
-        return [n]  
+        return [n]  # If n is prime, return it as the closest prime
     lower = n - 1
     upper = n + 1
     primes = []
-    while len(primes) < 2:  
+    while len(primes) < 2:  # We are looking for both the lower and upper primes
         if is_prime(lower):
             primes.append(lower)
         if is_prime(upper):
@@ -45,9 +60,16 @@ def nearest_prime(n):
         upper += 1
     return primes
 
+# Math challenge to find the prime number closest to a random number between 10 and 20
+# Prompts the user for input and compares it to the nearest prime number(s)
+# Returns: True if the user provides the correct answer, False otherwise
 def math_challenge_prime():
-    n = random.randint(10, 20)
-    a = int(input(f"Find the prime number closest to {n}: "))
+    n = random.randint(10, 20)  # Generate a random number
+    try:
+        a = int(input(f"Find the prime number closest to {n}: "))
+    except ValueError:
+        print("Error: Please enter a valid integer")  # Error handling for invalid input
+        return False
     b = nearest_prime(n)
     if a in b:
         print("Correct!")
@@ -56,17 +78,15 @@ def math_challenge_prime():
         print(f"Incorrect. The closest prime numbers are {', '.join(map(str, b))}.")
         return False
 
-
+# Math challenge to solve a random mathematical operation (addition, subtraction, or multiplication)
+# Prompts the user for input and compares it to the correct result
+# Returns: True if the user provides the correct answer, False otherwise
 def math_roulette_challenge():
-    m = []
-    for i in range(5):
-        m.append(random.randint(1, 20))
-    opp = random.choice(['+', '-', '*'])
+    m = [random.randint(1, 20) for _ in range(5)]  # Generate 5 random numbers
+    opp = random.choice(['+', '-', '*'])  # Randomly choose an operation
 
     if opp == '+':
-        res = 0
-        for i in m:
-            res = res + i
+        res = sum(m)
         expr = f"{m[0]}"
         for i in m[1:]:
             expr += f" + {i}"
@@ -76,10 +96,9 @@ def math_roulette_challenge():
         res = m[0]
         expr = f"{m[0]}"
         for i in m[1:]:
-            res = res - i
+            res -= i
             expr += f" - {i}"
         print(f"Solve the following operation: {expr}")
-
     elif opp == '*':
         res = m[0]
         expr = f"{m[0]}"
@@ -88,34 +107,31 @@ def math_roulette_challenge():
             expr += f" * {i}"
         print(f"Solve the following operation: {expr}")
     
-    user_answer = input("Your answer: ").strip()
+    try:
+        user_answer = float(input("Your answer: ").strip())
+    except ValueError:
+        print("Error: Please enter a valid float")  # Error handling for invalid input
+        return False
     
-    if int(user_answer) == res:
+    if user_answer == res:
         print("Correct! Well done.")
         return True
     else:
         print(f"Incorrect. The correct answer was {res}.")
         return False
-    
 
-
-
+# Main function to randomly choose one of the math challenges and call the corresponding function
+# Returns: True if the user completes the challenge correctly, False otherwise
 def math_challenge():
-    result = random.randint(1, 3)
+    result = random.randint(1, 3)  # Randomly select one of the challenges
     sucess = False
     if result == 1:
         print("The master has chosen the factorial challenge")
         sucess = math_challenge_factorial()
-    if result == 2:
+    elif result == 2:
         print("The master has chosen the prime challenge")
         sucess = math_challenge_prime()
-    if result == 3:
+    elif result == :
         print("The master has chosen the roulette challenge")
         sucess = math_roulette_challenge()
     return sucess
-
-
-
-
-
-
