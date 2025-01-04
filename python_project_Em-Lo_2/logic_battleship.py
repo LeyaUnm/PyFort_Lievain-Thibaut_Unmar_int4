@@ -119,8 +119,8 @@ def battleship_game(): #Main
         player = next_player(player) # Switch player turn
 
     if player: # Determine who won, the winner is the inverse from player since we switched after the end of the round
-        print("You have sunk both of the master's ships. You win a key!")
+        print("You have sunk both of the master's ships! You win!")
         return True
     else:
-        print("All of your boats have been sunken. You lose and don't get a key.")
+        print("All of your boats have been sunken. You lose.")
         return False
