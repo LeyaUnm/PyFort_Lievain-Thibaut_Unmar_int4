@@ -1,5 +1,5 @@
 import random
-
+from random import randint
 
 def factorial(n):
     f = 1
@@ -14,7 +14,7 @@ def factorial(n):
 def math_challenge_factorial():
     print("yes")
     n = random.randint(0, 11)
-    a = int(input("Math Challenge: Find the factorial of ", n))
+    a = int(input(f"Math Challenge: Find the factorial of {n} : "))
     m = factorial(n)
     if a == m:
         return True
@@ -30,22 +30,30 @@ def is_prime(n):
             return False
     return True
 
-
 def nearest_prime(n):
-    a = is_prime(n)
-    while a == False:
-        n += 1
-        a = is_prime(n)
-    return n
-
+    if is_prime(n):
+        return [n]  
+    lower = n - 1
+    upper = n + 1
+    primes = []
+    while len(primes) < 2:  
+        if is_prime(lower):
+            primes.append(lower)
+        if is_prime(upper):
+            primes.append(upper)
+        lower -= 1
+        upper += 1
+    return primes
 
 def math_challenge_prime():
     n = random.randint(10, 20)
-    a = int(input("Find the prime number closest to {} :".format(n)))
+    a = int(input(f"Find the prime number closest to {n}: "))
     b = nearest_prime(n)
-    if a == b:
+    if a in b:
+        print("Correct!")
         return True
     else:
+        print(f"Incorrect. The closest prime numbers are {', '.join(map(str, b))}.")
         return False
 
 
@@ -56,12 +64,13 @@ def solve_linear_equation():
 
 
 def math_challenge_equation():
-    c = solve_linear_equation()
-    guess = float(input("Solve this equation : {}x + {}".format(a, b)))
+    a , b, x = solve_linear_equation()
+    guess = float(input("Solve this equation : {}x + {} : ".format(a, b)))
     if guess == x:
         return True
     else:
         return False
+
 
 
 def math_roulette_challenge():
@@ -88,10 +97,10 @@ def math_roulette_challenge():
         print(f"Solve the following operation: {expr}")
 
     elif opp == '*':
-        res = 1
+        res = m[0]
         expr = f"{m[0]}"
-        for i in m:
-            res = res * i
+        for i in m[1:]:
+            res *= i
             expr += f" * {i}"
         print(f"Solve the following operation: {expr}")
     
@@ -106,10 +115,25 @@ def math_roulette_challenge():
     
 
 
+
 def math_challenge():
-    challenges = ["math_challenge_factorial", "math_challenge_prime", "math_roulette_challenge", "math_challenge_equation"]
-    challenge = random.choices(challenges)
-    return challenge
+    result = random.randint(1, 4)
+    sucess = False
+    if result == 1:
+        print("The master has chosen the factorial challenge")
+        sucess = math_challenge_factorial()
+    if result == 2:
+        print("The master has chosen the prime challenge")
+        sucess = math_challenge_prime()
+    if result == 3:
+        print("The master has chosen the equation challenge")
+        sucess = math_challenge_equation()
+    if result == 4:
+        print("The master has chosen the roulette challenge")
+        sucess = math_roulette_challenge()
+    return sucess
+
+
 
 
 
