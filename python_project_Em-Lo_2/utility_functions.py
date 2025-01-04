@@ -11,7 +11,7 @@ def introduction():
 def compose_equipe() :
     team = []
     n = int(input("Enter the number of players: "))
-    while 0 > n or n > 3 :
+    while 1 > n or n > 3 :
         n = int(input("Error, please enter a number between 1 and 3: "))
     for i in range(n) :
         print(f"Enter details for Player {i + 1}:")
@@ -56,6 +56,6 @@ def choose_player(team):
         print(f"{i}. {player['name']} ({player['profession']}) - {'Leader' if player['is_leader'] else 'Member'}")
         i += 1
     
-    player_number = int(input("Entrez le numéro du joueur: "))
+    player_number = int(input("Enter the number of the player "))
     selected_player = team[player_number - 1]
     return selected_player
