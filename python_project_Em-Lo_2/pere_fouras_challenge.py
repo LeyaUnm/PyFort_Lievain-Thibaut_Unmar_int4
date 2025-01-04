@@ -1,3 +1,6 @@
+# Fort Boyard Simulation : Lola Lievain-Thibaut ; Emeline Unmar
+# implementation of the Père Fouras Challenge's function 
+
 import json
 import random
 
