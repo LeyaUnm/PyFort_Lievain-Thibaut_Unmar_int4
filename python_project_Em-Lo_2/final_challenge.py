@@ -2,7 +2,7 @@ import json
 import random
 
 def treasure_room():
-    with open("TRClues.json", 'r') as f:
+    with open("python_project_Em-Lo_2/TRClues.json", 'r') as f:
         data = json.load(f)
 
     year = random.choice(list(data.keys()))
