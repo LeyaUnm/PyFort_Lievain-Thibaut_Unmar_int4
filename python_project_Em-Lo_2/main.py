@@ -53,7 +53,21 @@ def game():
         if success == True :
             key += 1
             print("You have passed this challenge. Good job on gaining a key!")
-        if success== False :
-            print("You have failed this challenge. Good luck for the next one.)
+        if success == False :
+            print("You have failed this challenge. Good luck for the next one.")
         
-            
+    print("You have 3 keys ! you can officially access the final challenge. You will have to guess a codeword with clues. You will have three tires, each tries adding on a new clue. If you succeed, you will win the game. if not, you will have lost.")
+    treasure_room()
+
+answer = True
+while answer == True : 
+    game()
+    word = str(input("You have finished the game, would you like to play again ? write 'yes' if yes, and 'no' if not"))
+    while word != "yes" or word != "no":
+            word = str(input("Invalid answer. PLease write 'yes' if yes, and 'no' if not"))
+    if word == "yes":
+        answer = True
+    if word == "no":
+        answer = False
+    
+    
