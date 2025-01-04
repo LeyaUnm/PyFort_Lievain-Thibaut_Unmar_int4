@@ -2,6 +2,8 @@ from math_challenges import *
 from pere_fouras_challenge import *
 from logic_battleship import *
 from chance_challenge import *
+from utility_functions import *
+from final_challenge import *
 
     
 def game(): #Main program
@@ -10,28 +12,29 @@ def game(): #Main program
     key = 0
     while key != 3:
         success = False
-        print("You currently have " + key + " keys")
+        print("You currently have " , key , " keys")
         player = choose_player(team)
-        print(player + " will now play")
-        choice = challenge_menu()
+        print("Player " , player , "will now play")
+        choice = challenges_menu()
         
         if choice == 1: #Maths challenges
             
                 print("you will now participate in a math challenge chosen by the master")
                 challenge = math_challenge()
-                if challenge == "math_challenge_factorial":
+                print(challenge)
+                if challenge == 'math_challenge_factorial':
                     print("The master has chosen the factorial challenge")
                     success = math_challenge_factorial()
                     
-                if challenge == "math_challenge_prime":
+                if challenge == 'math_challenge_prime':
                     print("The master has chosen the prime challenge")
                     success = math_challenge_prime()
                     
-                if challenge == "math_roulette_challenge":        
+                if challenge == 'math_roulette_challenge':        
                     print("The master has chosen the roulette challenge")
-                    success = math_challenge_roulette()
+                    success = math_roulette_challenge()
                     
-                if challenge == "math_challenge_equation":
+                if challenge == 'math_challenge_equation':
                     print("The master has chosen the equation challenge")
                     success = math_challenge_equation()
 
@@ -40,8 +43,7 @@ def game(): #Main program
                 success = battleship_game()
             
         if choice == 3:#chance challenges
-                print("You will now participate in a chance challenge.")
-                success = chance_game()
+                pass
             
         if choice == 4:#Pere fouras challenges
                 print("You have chosen the Pere Fouras riddle. Read carefully and answer the riddle. You have 3 chances. Good luck")
@@ -66,5 +68,3 @@ while answer == True :
         answer = True
     if word == "no":
         answer = False
-    
-    
