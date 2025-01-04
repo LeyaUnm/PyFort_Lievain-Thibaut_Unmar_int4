@@ -19,7 +19,7 @@ def game(): #Main program
         
         if choice == 1: #Maths challenges
                 print("you will now participate in a math challenge chosen by the master")
-                challenge = math_challenge()
+                success = math_challenge()
 
         if choice == 2:#logic challenge, battleship
                 print("You will now participate in a logic challenge. You will play against the master in a round of battleship.")
