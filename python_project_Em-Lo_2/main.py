@@ -1,7 +1,7 @@
 from math_challenges import *
 from pere_fouras_challenge import *
 from logic_battleship import *
-from chance8challenge import *
+from chance_challenge import *
 
     
 def game(): #Main program
