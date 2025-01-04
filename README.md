@@ -63,18 +63,27 @@ used for error management.
 
 o A logbook can help keep track of project progress and task allocation: 
 
-§ Project chronology: Dates and descriptions of milestones, decisions 
-made, and problems encountered. 
-§ Task distribution: Who worked on what and how tasks were divided 
-among team members. 
+Logbook:
+
+Friday, December 6th: Initial commit, task planning session, and getting familiar with how Git and GitHub work. Lola started working on the battleship program.
+
+Friday, December 20th: Emeline worked on and completed her maths challenges, while Lola continued working on the battleship program. We had some issues with GitHub but managed to solve them.
+
+Tuesday, December 24th: Solo session for Lola, finished the battleship game, and completed the chance challenges.
+
+Thursday, December 26th: Emeline started working on the Père Fouras riddle and the treasure room.
+
+Thursday, January 2nd: Lola started working on the Readme part 2. She tried to implement a history feature but kept encountering errors. Unable to fix it, she focused on helping Emeline and improving the battleship game. Meanwhile, Emeline finished the Père Fouras riddle and the final challenge for the treasure room.
+
+Friday, January 3rd: We had a big panic because we didn’t check each other’s functions before. When we tried to check them, we realized that after every commit, the functions didn’t work. We tried to fix it but failed, so we created a new repository. Lola worked on the game() function, and Emeline worked on the utility functions. Then we copied and pasted everything from our computers into GitHub.
+
+Saturday, January 4th: Final checks and full testing day. Finished the Readme file.
 
 4. Testing and Validation
 
 o Test strategies : 
 
 Specific Test Cases and Results:
-
-Mathematical Challenges:
 
 Test Case: Verifying that the factorial function returns correct results for inputs ranging from 0 to 11.
 ![image](https://github.com/user-attachments/assets/8a27481b-c8a5-4f62-aea6-fd363acdabfc)
