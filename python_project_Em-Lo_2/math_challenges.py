@@ -90,7 +90,7 @@ def math_roulette_challenge():
 
 
 def math_challenge():
-    challenges = [math_challenge_factorial, math_challenge_prime, math_roulette_challenge, math_challenge_equation]
+    challenges = ["math_challenge_factorial", "math_challenge_prime", "math_roulette_challenge", "math_challenge_equation"]
     challenge = random.choices(challenges)
     return challenge
 
