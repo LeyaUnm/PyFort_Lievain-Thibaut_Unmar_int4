@@ -6,12 +6,12 @@ from chance_challenge import *
     
 def game(): #Main program
     introduction()
-    compose_equipe()
+    team = compose_equipe()
     key = 0
     while key != 3:
         success = False
         print("You currently have " + key + " keys")
-        player = choose_player()
+        player = choose_player(team)
         print(player + " will now play")
         choice = challenge_menu()
         
