@@ -66,27 +66,44 @@ def math_challenge_equation():
 
 def math_roulette_challenge():
     m = []
-    for i in range(4):
+    for i in range(5):
         m.append(random.randint(1, 20))
     opp = random.choice(['+', '-', '*'])
 
     if opp == '+':
         res = 0
         for i in m:
-            res += i
-        return res
-
-    if opp == '-':
+            res = res + i
+        expr = f"{m[0]}"
+        for i in m[1:]:
+            expr += f" + {i}"
+        print(f"Solve the following operation: {expr}")
+    
+    elif opp == '-':
         res = m[0]
-        for i in range(m[1], m[4]):
-            res -= i
-        return res
+        expr = f"{m[0]}"
+        for i in m[1:]:
+            res = res - i
+            expr += f" - {i}"
+        print(f"Solve the following operation: {expr}")
 
-    if opp == '*':
+    elif opp == '*':
         res = 1
+        expr = f"{m[0]}"
         for i in m:
-            res *= i
-        return res
+            res = res * i
+            expr += f" * {i}"
+        print(f"Solve the following operation: {expr}")
+    
+    user_answer = input("Your answer: ").strip()
+    
+    if int(user_answer) == res:
+        print("Correct! Well done.")
+        return True
+    else:
+        print(f"Incorrect. The correct answer was {res}.")
+        return False
+    
 
 
 def math_challenge():
