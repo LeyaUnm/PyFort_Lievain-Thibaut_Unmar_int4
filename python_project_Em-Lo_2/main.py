@@ -19,19 +19,19 @@ def game(): #Main program
             
                 print("you will now participate in a math challenge chosen by the master")
                 challenge = math_challenge()
-                if challenge == math_challenge_factorial:
+                if challenge == "math_challenge_factorial":
                     print("The master has chosen the factorial challenge")
                     success = maths_challenge_factorial()
                     
-                if challenge == math_challenge_prime:
+                if challenge == "math_challenge_prime":
                     print("The master has chosen the prime challenge")
                     success = maths_challenge_prime()
                     
-                if challenge == math_roulette_challenge:        
+                if challenge == "math_roulette_challenge":        
                     print("The master has chosen the roulette challenge")
                     success = maths_challenge_roulette()
                     
-                if challenge == math_challenge_equation:
+                if challenge == "math_challenge_equation":
                     print("The master has chosen the equation challenge")
                     success = maths_challenge_equation()
 
