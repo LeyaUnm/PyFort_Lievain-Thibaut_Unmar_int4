@@ -53,11 +53,7 @@ def challenges_menu() :
 def choose_player(team):
     i = 1
     for player in team:
-        if player['role'] == 'Leader':
-            role = 'Leader'  
-        else :
-            role = 'Member'
-        print(f"{i}. {player['name']} ({player['profession']}) - {role}")
+        print(f"{i}. {player['name']} ({player['profession']}) - {'Leader' if player['is_leader'] else 'Member'}")
         i += 1
     
     player_number = int(input("Entrez le numéro du joueur: "))
