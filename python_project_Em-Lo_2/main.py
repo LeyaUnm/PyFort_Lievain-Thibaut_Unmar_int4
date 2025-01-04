@@ -12,7 +12,7 @@ def game(): #Main program
         success = False
         print("You currently have " + key + " keys")
         player = choose_player()
-        print("Player " + player + "will now play")
+        print(player + " will now play")
         choice = challenge_menu()
         
         if choice == 1: #Maths challenges
@@ -40,7 +40,8 @@ def game(): #Main program
                 success = battleship_game()
             
         if choice == 3:#chance challenges
-                pass
+                print("You will now participate in a chance challenge.")
+                success = chance_game()
             
         if choice == 4:#Pere fouras challenges
                 print("You have chosen the Pere Fouras riddle. Read carefully and answer the riddle. You have 3 chances. Good luck")
