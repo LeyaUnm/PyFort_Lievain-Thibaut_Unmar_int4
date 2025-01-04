@@ -18,25 +18,8 @@ def game(): #Main program
         choice = challenges_menu()
         
         if choice == 1: #Maths challenges
-            
                 print("you will now participate in a math challenge chosen by the master")
                 challenge = math_challenge()
-                print(challenge)
-                if challenge == 'math_challenge_factorial':
-                    print("The master has chosen the factorial challenge")
-                    success = math_challenge_factorial()
-                    
-                if challenge == 'math_challenge_prime':
-                    print("The master has chosen the prime challenge")
-                    success = math_challenge_prime()
-                    
-                if challenge == 'math_roulette_challenge':        
-                    print("The master has chosen the roulette challenge")
-                    success = math_roulette_challenge()
-                    
-                if challenge == 'math_challenge_equation':
-                    print("The master has chosen the equation challenge")
-                    success = math_challenge_equation()
 
         if choice == 2:#logic challenge, battleship
                 print("You will now participate in a logic challenge. You will play against the master in a round of battleship.")
