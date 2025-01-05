@@ -131,7 +131,7 @@ def math_challenge():
     elif result == 2:
         print("The master has chosen the prime challenge")
         sucess = math_challenge_prime()
-    elif result == :
+    elif result == 3:
         print("The master has chosen the roulette challenge")
         sucess = math_roulette_challenge()
     return sucess
