@@ -43,7 +43,7 @@
      - Paste the URL in the entrance bar :
      
 ![Screenshot 2025-01-05 100248](https://github.com/user-attachments/assets/2fc20593-5d38-4b8a-b1f2-c197aa56553e)
-     - Select the location of the file in your computer Paste
+     - Select the location of the file in your computer
      - Opend the Clone repository.
     
   2. Modification of the JSON file's path in the program :
