@@ -5,7 +5,7 @@ import json
 import random
 
 def treasure_room():
-    with open("python_project_Em-Lo_2/TRClues.json", 'r') as f:
+    with open("path that led to the TRClues.json on your computer", 'r') as f: # You need to copy between the " " the path that led to the TRClues.json on your computer
         data = json.load(f)
 
     year = random.choice(list(data.keys()))
