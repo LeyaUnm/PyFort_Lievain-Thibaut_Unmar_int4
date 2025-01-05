@@ -27,7 +27,7 @@ def game(): #Main program
             
         if choice == 3:#chance challenges
             print("You have chosen a chance challenge.")
-                success = chance_game()
+            success = chance_game()
             
         if choice == 4:#Pere fouras challenges
                 print("You have chosen the Pere Fouras riddle. Read carefully and answer the riddle. You have 3 chances. Good luck")
