@@ -1,4 +1,4 @@
-Programming in Python's project : Fort Boyard Simulation 
+# Programming in Python's project : Fort Boyard Simulation 
 
 # 1.General presentation :
 	
@@ -32,6 +32,10 @@ Programming in Python's project : Fort Boyard Simulation
   * Development Tools: PyCharm
   
   Installation : 
+
+  1. Clone the git repository in your IDE.
+     - Copy the link :
+     - Open it in PyCharm
   
   How to use :
 
