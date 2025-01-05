@@ -21,7 +21,7 @@ def load_riddles(file):
 # Function to run the riddle challenge
 # Returns True if the answer is correct, False otherwise
 def pere_fouras_riddle():
-    riddles = load_riddles('python_project_Em-Lo_2/PFRiddles.json')
+    riddles = load_riddles('path of the PFRiddles.json on your computer') # You need to copy here the path that led to the PRFriddles.json on your computer
     riddle = random.choice(riddles)
     attempts = 3 
 
