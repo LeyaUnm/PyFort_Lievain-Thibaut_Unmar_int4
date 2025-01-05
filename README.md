@@ -31,11 +31,26 @@
  
   * Development Tools: PyCharm
   
-  Installation : 
+  ## Installation : 
 
-  1. Clone the git repository in your IDE.
-     - Copy the link :
-     - Open it in PyCharm
+  1. Clone the git repository in your IDE :
+     - Copy the link : https://github.com/LeyaUnm/projet_python_Lievain-Thibaut_Unmar.git
+     - Open your IDE, here VSCode.
+     - Select " Clone Git Repository..." :
+       ![Screenshot 2025-01-05 100204](https://github.com/user-attachments/assets/6436b80d-6563-432b-92ad-26c12cb10271)
+     -Paste the URL in the entrance bar :
+	![Screenshot 2025-01-05 100248](https://github.com/user-attachments/assets/2fc20593-5d38-4b8a-b1f2-c197aa56553e)
+     - Select the location of the file in your computer
+     - Opend the Clone repository.
+    
+  2. Modification of the JSON file's path in the program :
+     - Open the 2 JSON file
+     - Right click on their name and select "copy path"
+	![Screenshot 2025-01-05 101556](https://github.com/user-attachments/assets/f4d24d4e-c1ad-42cc-8210-c28c20c12d40)
+
+
+     
+
   
   How to use :
 
